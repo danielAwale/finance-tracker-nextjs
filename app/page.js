@@ -8,6 +8,8 @@ export default function Home() {
     { name: 'candy', price: 5.95 },
   ]);
 
+  const [total, setTotal] = useState(0)
+
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
