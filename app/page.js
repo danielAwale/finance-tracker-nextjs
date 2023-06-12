@@ -6,7 +6,7 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
         <h1 className='text-4xl p-4 text-center'>Expense Tracker</h1>
         <div className='bg-slate-800 p-4 rounded-lg'>
-          <form>
+          <form className='grid grid-cols-6 items-center text-black'>
             <input type="text" placeholder='Enter Item' />
             <input type="number" placeholder='Enter $' />
             <button type='submit'>+</button>
