@@ -32,7 +32,7 @@ export default function Home() {
             ))}
           </ul>
           {items.length < 1 ? ('') : (
-            <div>
+            <div className="flex justify-between p-3">
               <span>Total</span>
               <span>${total}</span>
             </div>
