@@ -21,6 +21,16 @@ export default function Home() {
             <input className='col-span-2 border mx-3 p-3' type="number" placeholder='Enter $' />
             <button className='text-white bg-slate-950 hover:bg-slate-900 p-3 text-xl' type='submit'>+</button>
           </form>
+          <ul>
+            {items.map((item, id) => {
+              <li>
+                <div>
+                  <span>{item.name}</span>
+                  <span>${item.price}</span>
+                </div>
+              </li>
+            })}
+          </ul>
         </div>
       </div>
     </main>
