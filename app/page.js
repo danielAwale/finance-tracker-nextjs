@@ -3,12 +3,11 @@ import React, { useState, useEffect } from "react"
 
 export default function Home() {
   const [items, setItems] = useState([
-    { name: 'coffee', price: 4.95 },
+    { name: 'Coffee', price: 4.95 },
     { name: 'Movies', price: 30.00 },
     { name: 'candy', price: 5.95 },
   ]);
-
-  const [total, setTotal] = useState(0)
+  const [total, setTotal] = useState(0);
 
 
   return (
@@ -22,14 +21,15 @@ export default function Home() {
             <button className='text-white bg-slate-950 hover:bg-slate-900 p-3 text-xl' type='submit'>+</button>
           </form>
           <ul>
-            {items.map((item, id) => {
+            {items.map((item, id) => (
               <li>
                 <div>
                   <span>{item.name}</span>
-                  <span>${item.price}</span>
+                  <span>{item.price}</span>
                 </div>
+                <button>X</button>
               </li>
-            })}
+            ))}
           </ul>
         </div>
       </div>
