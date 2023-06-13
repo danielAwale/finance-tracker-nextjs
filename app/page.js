@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react"
 export default function Home() {
   const [items, setItems] = useState([
     { name: 'Coffee', price: 4.95 },
-    { name: 'Movies', price: 30.00 },
+    { name: 'Movies', price: 29.99 },
     { name: 'candy', price: 5.95 },
   ]);
   const [total, setTotal] = useState(0);
@@ -22,12 +22,12 @@ export default function Home() {
           </form>
           <ul>
             {items.map((item, id) => (
-              <li>
-                <div>
-                  <span>{item.name}</span>
+              <li key={id} className="my-4 w-full flex justify-between bg-slate-950">
+                <div className="p-4 w-full flex justify-between">
+                  <span className="capitalize">{item.name}</span>
                   <span>{item.price}</span>
                 </div>
-                <button>X</button>
+                <button className="ml-8 p-4 border-l-2 border-slate-900 hover:bg-slate-900 w-16">X</button>
               </li>
             ))}
           </ul>
