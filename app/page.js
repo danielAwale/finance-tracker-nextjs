@@ -31,6 +31,12 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          {items.length < 1 ? ('') : (
+            <div>
+              <span>Total</span>
+              <span>${total}</span>
+            </div>
+          )}
         </div>
       </div>
     </main>
