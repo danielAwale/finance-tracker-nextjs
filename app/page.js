@@ -11,6 +11,15 @@ export default function Home() {
   ]);
   const [total, setTotal] = useState(0);
 
+  // Add item to database 
+  const addItem = async (e) => {
+    e.preventDefault()
+  }
+
+  // Read items from database
+
+  // Delete items from database
+
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 p-4">
