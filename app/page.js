@@ -1,5 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react"
+import { collection, addDoc } from "firebase/firestore";
+
 
 export default function Home() {
   const [items, setItems] = useState([
