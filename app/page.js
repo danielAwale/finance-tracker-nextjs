@@ -37,6 +37,15 @@ export default function Home() {
         itemsArr.push({ ...doc.data(), id: doc.id })
       })
       setItems(itemsArr)
+
+      //read total from itemsArr
+
+      const calculateTotal = () => {
+        const totalPrice = itemsArr.reduce((sum, item) => sum + parseFloat(item.price), 0)
+        setTotal(totalPrice)
+      }
+      calculateTotal()
+      return () => unsubscribe();
     })
   }, [])
 
