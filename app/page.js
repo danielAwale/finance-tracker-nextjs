@@ -15,6 +15,9 @@ export default function Home() {
   // Add item to database 
   const addItem = async (e) => {
     e.preventDefault()
+    if (newItem.name !== '' && newItem.price !== '') {
+      setItems([...items, newItem])
+    }
   }
 
   // Read items from database
