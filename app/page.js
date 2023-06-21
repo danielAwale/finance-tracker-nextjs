@@ -9,6 +9,7 @@ export default function Home() {
     { name: 'Movies', price: 29.99 },
     { name: 'candy', price: 5.95 },
   ]);
+  const [newItem, setNewItem] = useState({ name: '', price: '' })
   const [total, setTotal] = useState(0);
 
   // Add item to database 
